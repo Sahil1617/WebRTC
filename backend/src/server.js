@@ -16,7 +16,7 @@ app.use(cors());
 app.use(express.json({limit: "50kb"}));
 app.use(express.urlencoded({limit: "50kb", extended: true}));
 
-app.use("/api", usersRouter);
+app.use("/api/users", usersRouter);
 
 const start = async () => {
     try {
